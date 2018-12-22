@@ -16,6 +16,7 @@ class A {
 		return new Promise((resolve, reject) => {
 			setTimeout(() => {
 				resolve('fromAsyncMethod');
+				console.log('endAsyncMethod');
 			}, 1000);
 		});
 	}
