@@ -1,0 +1,1 @@
+docker run -it --rm --name node8 -p 3000:3000 node:8.14.1-alpine
