@@ -4,4 +4,4 @@
     - fully function setting and build script
 
 # TODO
-- [ ] how to build node project? prepare for jenkins call.
+- - [ ] how to build node project? prepare for jenkins call.
