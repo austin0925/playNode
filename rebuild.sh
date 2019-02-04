@@ -1,0 +1,1 @@
+docker exec -i ehmaria mysql -u root -p'!Qa109' ehrms2_log<./MariaData/DB_ehrms2_2019_02_01_23_00_log.sql && docker exec -i ehmaria mysql -u root -p'!Qa109' ehrms2_log<./MariaData/DB_ehrms2_2019_02_01_23_00_log.sql
