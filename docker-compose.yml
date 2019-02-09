@@ -4,7 +4,7 @@ services:
     container_name: ehredis
     image: redis
     ports: 
-    - "6379:6379"
+      - "6379:6379"
   db:
     container_name: ehmaria
     image: mariadb:10.2.21
@@ -20,5 +20,7 @@ services:
       MYSQL_PASSWORD: "104104"
     command:
       "mysqld --innodb-flush-method=fsync"
+      # "/docker-entrypoint-initdb.d/init.sh" 
+      # not necersary
 # volumes:
 #   myDB: 
