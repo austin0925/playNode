@@ -5,6 +5,7 @@
 [client]
 # Default is Latin1, if you need UTF-8 set this (also in server section)
 #default-character-set = utf8 
+default-character-set=utf8
 
 [mysqld]
 #
@@ -14,12 +15,19 @@
 #
 #character-set-server  = utf8 
 #collation-server      = utf8_general_ci 
+#character-set-server=utf8
+#collation-server=utf8_unicode_ci
 #character_set_server   = utf8 
 #collation_server       = utf8_general_ci 
 # Import all .cnf files from configuration directory
 !includedir /etc/mysql/mariadb.conf.d/
-#skip-character-set-client-handshake
-init_connect='SET collation_connection = utf8_unicode_ci'
-init-connect='SET NAMES utf8'
-character-set-server=utf8
-collation-server=utf8_unicode_ci
+#22的設定檔
+#datadir=D:/Program Files/MariaDB 10.2/data
+#port=3306
+#innodb_buffer_pool_size=2029M
+#character-set-server=utf8
+#default-time-zone=UTC
+#collation_database=utf8_general_ci
+#collation_server=utf8_general_ci
+#character_set_database=utf8
+character_set_server=utf8
