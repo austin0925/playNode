@@ -7,7 +7,7 @@ services:
       - "6379:6379"
   db:
     container_name: ehmaria
-    image: mariadb:10.2.21
+    image: mariadb:10.2.21 ## 10.2.22, 10.2.22-bionic, 10.3.13, 10.4.3
     ports: 
       - "3306:3306"
     volumes:
