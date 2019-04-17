@@ -1,5 +1,14 @@
 version: '3'
 services:
+  node:
+    container_name: ehnode
+    image: austinmsn/nodemon:0.1
+    ports: 
+      - "3990:2990"
+    volumes:
+      - /d/git/ehrms2portal_SC:/usr/src/ehrms2portal_SC
+    command:
+      "nodemon /usr/src/ehrms2portal_SC/bin/www"
   redis:
     container_name: ehredis
     image: redis
