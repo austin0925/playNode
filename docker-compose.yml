@@ -2,13 +2,9 @@ version: '3'
 services:
   node:
     container_name: ehnode
-    image: austinmsn/nodemon:0.1
+    image: austinmsn/ehrms2portal:0.1
     ports: 
       - "3990:2990"
-    volumes:
-      - /d/git/ehrms2portal_SC:/usr/src/ehrms2portal_SC
-    command:
-      "nodemon /usr/src/ehrms2portal_SC/bin/www"
   redis:
     container_name: ehredis
     image: redis
@@ -20,9 +16,9 @@ services:
     ports: 
       - "3306:3306"
     volumes:
-      - /d/git/playNode/maria/conf:/etc/mysql/conf.d
-      - /d/git/playNode/maria/data:/var/lib/mysql
-      - /d/git/playNode/maria/init:/etc/mysql/init
+      - /c/git/playNode/maria/conf:/etc/mysql/conf.d
+      - /c/git/playNode/maria/data:/var/lib/mysql
+      - /c/git/playNode/maria/init:/etc/mysql/init
     environment: 
       MYSQL_ROOT_PASSWORD: "!Qa109"
       MYSQL_USER: "ehrms2_user"
